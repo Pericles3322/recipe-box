@@ -8,5 +8,11 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('recipe-box');
+  protected readonly libraryTitle = signal<string>('MY RECIPE BOX');
+  protected PrimaryButton(): void {
+    console.log('Spaghetti Carbonara');
+  }
+  protected SecondaryButton(): void {
+    console.log('Caprese Salad');
+  }
 }
