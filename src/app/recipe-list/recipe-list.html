@@ -1,0 +1,9 @@
+<h1>{{ libraryTitle() }}</h1>
+<p>A place to organize my recipes</p>
+<button (click)="PrimaryButton()">Spaghetti Carbonara</button>
+<button (click)="SecondaryButton()" >Caprese Salad</button>
+ @if (recipe().isFavorite) {
+        <p>Favorito</p>
+    }
+<p></p>
+<app-recipe-detail [recipe]="recipe()" />

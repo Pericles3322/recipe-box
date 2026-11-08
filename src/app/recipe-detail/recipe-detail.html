@@ -1,0 +1,16 @@
+<article class="recipe-detail">
+    <h2 class="font-size">{{ recipe().name }}</h2> <h2 class="font-weight"> {{ recipe().description }}</h2>
+    <p>Porção: {{ serving() }}</p>
+    <button class="button" (click)="deleteServing()" > - </button>
+    <button class="button" (click)="addServing()" > + </button>
+    <h2 class="Titulo">Ingredientes</h2>
+    <ul class="Ingredientes">
+    @for (ingredient of adjustedIngredients(); track ingredient.name) {
+        <li>
+        {{ ingredient.name }} — {{ ingredient.quantity }} {{ ingredient.unit }}
+        </li>
+    }
+    </ul>
+
+    <img class="recipe-image" [src]="imageUrl()" [alt]="recipe().name">
+</article>

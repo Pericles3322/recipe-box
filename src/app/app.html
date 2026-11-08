@@ -6,15 +6,5 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<h1>{{ libraryTitle() }} - {{ recipe().name }} - {{ recipe().description }}</h1>
-<p>A place to organize my recipes</p>
-
-<button (click)="PrimaryButton()">Spaghetti Carbonara</button>
-<button (click)="SecondaryButton()" >Caprese Salad</button>
-<p></p>
-<p>Porção: {{ serving() }}</p>
-<button (click)="deleteServing()" > - </button>
-<button (click)="addServing()" > + </button>
-<h2>Ingredientes</h2>
-<pre>{{ adjustedIngredients() | json }}</pre>
+<app-recipe-list></app-recipe-list>
 

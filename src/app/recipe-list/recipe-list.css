@@ -1,0 +1,5 @@
+.recipe-image {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
